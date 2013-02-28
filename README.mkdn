@@ -40,6 +40,7 @@ along with GNU Emacs; see the file COPYING.  If not, write to the
 Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 Boston, MA 02110-1301, USA.
 
+[toml]: https://github.com/mojombo/toml
 [marmalade]: http://marmalade-repo.org
 [melpa]: http://melpa.milkbox.net
 [gpl]: http://www.gnu.org/licenses/gpl.html
