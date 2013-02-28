@@ -56,7 +56,8 @@
   (setq-local parse-sexp-ignore-comments t)
   (setq-local indent-tabs-mode nil)
   (setq font-lock-defaults '(toml-keywords)))
-  
+
+;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.toml$" . toml-mode))
 
 (provide 'toml-mode)
