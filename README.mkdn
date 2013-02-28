@@ -1,4 +1,4 @@
-# toml-mode v0.1.1 (beta)
+# toml-mode v0.1.2 (beta)
 
 Emacs syntax hilighting for [TOML][toml]. This is my first Emacs syntax hilighting plugin; as a result, it may be buggy.
 
