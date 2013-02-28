@@ -31,7 +31,7 @@
 
 ;;; Code:
 
-(defvar toml-syntax-table nil "Syntax table ofr `toml-mode'.")
+(defvar toml-syntax-table nil "Syntax table for `toml-mode'.")
 (setq toml-syntax-table
       (let ((syn-table (make-syntax-table)))
         (modify-syntax-entry ?# "< b" syn-table)
@@ -45,7 +45,7 @@
     ("\\b[[:digit:]]+\\b" . font-lock-variable-name-face))
   "Syntax highlight keywords for `toml-mode`")
 
-           
+;;;###autoload           
 (define-derived-mode toml-mode prog-mode "toml"
   :syntax-table toml-syntax-table
   (setq-local comment-start "# ")
