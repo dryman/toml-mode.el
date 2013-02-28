@@ -1,0 +1,45 @@
+# toml-mode v0.1 (beta)
+
+Emacs syntax hilighting for [TOML][toml]. This is my first Emacs syntax hilighting plugin; as a result, it may be buggy.
+
+## INSTALL
+
+If you have [marmalade][marmalade] or [melpa][melpa] and emacs24 installed, simply type
+
+    M-x package-install toml-mode
+
+In your .emacs
+
+    (require 'toml-mode)
+
+If you don't have marmalade installed, add these to your .emacs
+
+    (require 'package)
+    (add-to-list 'package-archives 
+        '("marmalade" . "http://marmalade-repo.org/packages/"))
+    (package-initialize)
+
+`M-x eval-buffer` to evaluate it, and then do `M-x package-refresh-contents` to load in the package listing.
+
+## LICENSE
+
+Copyright (C) 2013 by Felix Chern
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+[GNU General Public License][gpl] for more details.
+
+You should have received a copy of the GNU General Public License
+along with GNU Emacs; see the file COPYING.  If not, write to the
+Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+Boston, MA 02110-1301, USA.
+
+[marmalade]: http://marmalade-repo.org
+[melpa]: http://melpa.milkbox.net
+[gpl]: http://www.gnu.org/licenses/gpl.html
