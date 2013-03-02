@@ -4,7 +4,7 @@
 
 ;; Author: Felix Chern <idryman@gmail.com>
 ;; Keywords: data toml
-;; Version: 0.1.2
+;; Version: 0.1.3
 ;; URL: https://github.com/dryman/toml-mode
 
 ;; This file is not part of Emacs
@@ -42,7 +42,7 @@
   '(("\\[[a-zA-Z][^ \n\t\r]+\\]" . font-lock-keyword-face)
     ("[0-9]\\{4\\}-[0-9][0-9]-[0-9][0-9]T[0-9][0-9]:[0-9][0-9]:[0-9][0-9][Zz]"
      . font-lock-variable-name-face)
-    ("\\b[[:digit:]]+\\b" . font-lock-variable-name-face))
+    ("\\b[-+]?\\(?:[0-9]*\\.[0-9]+|[0-9]+\\)\\b" . font-lock-variable-name-face))
   "Syntax highlight keywords for `toml-mode`")
 
 ;;;###autoload           
