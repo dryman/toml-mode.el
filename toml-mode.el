@@ -45,6 +45,14 @@
     ("\\b[-+]?\\(?:[0-9]*\\.[0-9]+|[0-9]+\\)\\b" . font-lock-variable-name-face))
   "Syntax highlight keywords for `toml-mode`")
 
+(defconst toml-mode-align-rules
+  '((toml-equals
+     (regexp . "\\(\\s-*\\)=\\(\\s-*\\)")
+     (group  . (1 2))
+     (modes  . '(toml-mode))
+     (separate . entire)))
+  "Align rules for Toml Mode.")
+
 ;;;###autoload           
 (define-derived-mode toml-mode prog-mode "toml"
   :syntax-table toml-syntax-table
@@ -55,7 +63,8 @@
   (setq-local tab-stop-list '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120))
   (setq-local parse-sexp-ignore-comments t)
   (setq-local indent-tabs-mode nil)
-  (setq font-lock-defaults '(toml-keywords)))
+  (setq font-lock-defaults '(toml-keywords))
+  (setq align-mode-rules-list toml-mode-align-rules))
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.toml$" . toml-mode))
