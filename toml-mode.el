@@ -5,7 +5,7 @@
 ;; Author: Felix Chern <idryman@gmail.com>
 ;; Keywords: data toml
 ;; Version: 0.1.3
-;; URL: https://github.com/dryman/toml-mode
+;; URL: https://github.com/dryman/toml-mode.el
 
 ;; This file is not part of Emacs
 
