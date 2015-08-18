@@ -39,7 +39,7 @@
         syn-table))
 
 (defvar toml-keywords
-  '(("\\[[a-zA-Z][^ \n\t\r]+\\]" . font-lock-keyword-face)
+  '(("\\[\\{1,2\\}[a-zA-Z][^ \n\t\r]+\\]\\{1,2\\}" . font-lock-keyword-face)
     ("[0-9]\\{4\\}-[0-9][0-9]-[0-9][0-9]T[0-9][0-9]:[0-9][0-9]:[0-9][0-9][Zz]"
      . font-lock-variable-name-face)
     ("\\b[-+]?\\(?:[0-9]*\\.[0-9]+|[0-9]+\\)\\b" . font-lock-variable-name-face))
