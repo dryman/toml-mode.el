@@ -1,4 +1,4 @@
-;;; toml-mode.el --- Mojor mode for editing TOML files
+;;; toml-mode.el --- Major mode for editing TOML files
 
 ;; Copyright (C) 2013 Felix Chern
 
@@ -27,7 +27,7 @@
 
 ;;; Commentary
 
-;; This is a mojor mode for editing files in TOML data format
+;; This is a major mode for editing files in TOML data format
 
 ;;; Code:
 
