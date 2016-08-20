@@ -67,7 +67,7 @@
   (setq align-mode-rules-list toml-mode-align-rules))
 
 ;;;###autoload
-(add-to-list 'auto-mode-alist '("\\.toml$" . toml-mode))
+(add-to-list 'auto-mode-alist '("\\.toml\\'" . toml-mode))
 
 (provide 'toml-mode)
 
