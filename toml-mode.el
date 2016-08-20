@@ -30,6 +30,7 @@
 ;; This is a major mode for editing files in TOML data format
 
 ;;; Code:
+(require 'align)
 
 (defvar toml-syntax-table nil "Syntax table for `toml-mode'.")
 (setq toml-syntax-table
