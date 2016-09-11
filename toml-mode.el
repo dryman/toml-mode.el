@@ -25,11 +25,12 @@
 ;; Boston, MA 02110-1301, USA.
 
 
-;;; Commentary
+;;; Commentary:
 
 ;; This is a major mode for editing files in TOML data format
 
 ;;; Code:
+(require 'align)
 
 (defvar toml-syntax-table nil "Syntax table for `toml-mode'.")
 (setq toml-syntax-table
@@ -43,7 +44,7 @@
     ("[0-9]\\{4\\}-[0-9][0-9]-[0-9][0-9]T[0-9][0-9]:[0-9][0-9]:[0-9][0-9][Zz]"
      . font-lock-variable-name-face)
     ("\\b[-+]?\\(?:[0-9]*\\.[0-9]+|[0-9]+\\)\\b" . font-lock-variable-name-face))
-  "Syntax highlight keywords for `toml-mode`")
+  "Syntax highlight keywords for `toml-mode`.")
 
 (defconst toml-mode-align-rules
   '((toml-equals
@@ -53,7 +54,7 @@
      (separate . entire)))
   "Align rules for Toml Mode.")
 
-;;;###autoload           
+;;;###autoload
 (define-derived-mode toml-mode prog-mode "toml"
   :syntax-table toml-syntax-table
   (setq-local comment-start "# ")
@@ -67,7 +68,7 @@
   (setq align-mode-rules-list toml-mode-align-rules))
 
 ;;;###autoload
-(add-to-list 'auto-mode-alist '("\\.toml$" . toml-mode))
+(add-to-list 'auto-mode-alist '("\\.toml\\'" . toml-mode))
 
 (provide 'toml-mode)
 
