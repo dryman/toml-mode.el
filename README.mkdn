@@ -16,7 +16,7 @@ If you don't have marmalade installed, add these to your .emacs
 
     (require 'package)
     (add-to-list 'package-archives 
-        '("marmalade" . "http://marmalade-repo.org/packages/"))
+        '("marmalade" . "https://marmalade-repo.org/packages/"))
     (package-initialize)
 
 `M-x eval-buffer` to evaluate it, and then do `M-x package-refresh-contents` to load in the package listing.
@@ -39,8 +39,8 @@ You should have received a copy of the GNU General Public License
 along with GNU Emacs; see the file COPYING.  If not, write to the
 Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 Boston, MA 02110-1301, USA.
-
+http:
 [toml]: https://github.com/mojombo/toml
-[marmalade]: http://marmalade-repo.org
-[melpa]: http://melpa.milkbox.net
-[gpl]: http://www.gnu.org/licenses/gpl.html
+[marmalade]: https://marmalade-repo.org
+[melpa]: https://melpa.org
+[gpl]: https://www.gnu.org/licenses/gpl.html
